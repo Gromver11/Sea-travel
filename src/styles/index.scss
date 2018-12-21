@@ -1,2 +1,7 @@
+//setup
 @import "setup/reset.scss";
 @import "setup/fonts.scss";
+@import "setup/variables.scss";
+@import "setup/mixins.scss";
+//blocks
+@import "blocks/site.scss";
