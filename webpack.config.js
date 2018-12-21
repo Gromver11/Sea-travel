@@ -2,6 +2,9 @@ const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
+    entry: {
+        main: './src/scripts/index.js'
+    },
     module: {
         rules: [
             {
@@ -48,7 +51,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[path][name].[ext]'
+                            name: 'fonts/[name].[ext]'
                         }
                     }
                 ]
@@ -58,7 +61,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.pug",
+            template: "./src/pug/index.pug",
             filename: "./index.html"
         }),
         new MiniCssExtractPlugin({
