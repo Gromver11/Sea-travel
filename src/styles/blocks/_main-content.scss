@@ -1,0 +1,21 @@
+.main-content {
+  &__intro {
+    background-image: url("../images/intro-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color: $color--bg-intro;
+    position: relative;
+    height: 583px;
+    padding-top: 92px;
+    padding-bottom: 206px;
+    box-sizing: border-box;
+    @include above($mland) {
+      background-image: url("../images/intro-bg-tab.jpg");
+    }
+    @include above($md) {
+      padding-top: 215px;
+      height: 600px;
+    }
+  }
+}

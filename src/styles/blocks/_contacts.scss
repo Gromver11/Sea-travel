@@ -1,0 +1,21 @@
+.contacts {
+  &__phone {
+    font: {
+      family: $font--additional;
+      size: 14px;
+      weight: bold;
+    }
+
+    color: $color-blue;
+    text-decoration: none;
+
+  }
+  &__text {
+    font: {
+      family: $font--additional;
+      size: 10px;
+      weight: normal;
+    }
+    color: $color-blue;
+  }
+}

@@ -1,3 +1,11 @@
 .site {
-  background-color: $color-white
+  background-color: $color-white;
+  &__header {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    @include above($md) {
+      top: 23px;
+    }
+  }
 }

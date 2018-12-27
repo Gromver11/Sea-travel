@@ -1,0 +1,26 @@
+.btn {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  &__line {
+    display: block;
+    height: 2px;
+    width: 22px;
+    background-color:$color-blue;
+  }
+  &__line::after, &__line::before {
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: $color-blue;
+    position: absolute;
+    right:0;
+  }
+  &__line::before {
+    top: 0px;
+  }
+  &__line::after {
+   top: 16px;
+  }
+}

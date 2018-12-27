@@ -1,0 +1,17 @@
+.actions {
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 143px;
+  }
+  &__language {
+    width: 48px;
+  }
+  &__login {
+    width: 149px;
+  }
+  &__currency {
+    width: 77px;
+  }
+}

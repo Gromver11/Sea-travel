@@ -1,11 +1,11 @@
 div.actions__login.login
-    a(class="login__link" href="#") Личный кабинет
+    include ../blocks/login
 div.actions__currency.currency
-    a(class="currency__link" href="#") Рубль
-div.actions__language-bar.language-bar
-    a(class="language-bar__link" href="#") Ru
+    include ../blocks/currency
+div.language.actions__language
+    include ../blocks/language.pug
 div.actions__contacts.contacts
-    a(class="contacts__phone" href="tel:88005006105") 8800500-61-05
+    a(class="contacts__phone" href="tel:88005006105") 8 800 500-61-05
     span.contacts__text Круглосуточная поддержка
 
 

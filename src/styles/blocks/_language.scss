@@ -1,0 +1,28 @@
+.language {
+  &__btn {
+    color: $color-blue;
+    font: {
+      family: $font--additional;
+      size: 14px;
+    }
+    line-height: 3.4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__content {
+    position: absolute;
+    display: none;
+  }
+  &__btn::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 5px;
+    background-image: url("../images/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+  }
+}

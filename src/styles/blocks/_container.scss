@@ -1,0 +1,9 @@
+.container {
+  @include above($md) {
+    width: 750px;
+    margin: 0 auto;
+  }
+  @include above($lg) {
+    width: 1150px;
+  }
+}

@@ -1,0 +1,19 @@
+.page-header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__actions {
+    display: none;
+    @include above($md) {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:70%;
+    }
+  }
+  &__menu {
+    position: relative;
+  }
+}
