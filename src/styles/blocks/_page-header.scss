@@ -12,6 +12,9 @@
       align-items: center;
       width:70%;
     }
+    @include above($lg) {
+      width: 515px;
+    }
   }
   &__menu {
     position: relative;

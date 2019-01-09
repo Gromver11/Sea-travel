@@ -40,5 +40,8 @@
       top: 9px;
       left: 16px;
     }
+    @include above($lg) {
+      left: 6px;
+    }
   }
 }

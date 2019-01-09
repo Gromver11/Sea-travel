@@ -18,7 +18,12 @@ module.exports = {
             {
                 test: /\.pug$/,
                 use: [
-                    "html-loader",
+                    {
+                        loader: "html-loader",
+                        options: {
+                            attrs: ['img:src', 'source:srcset']
+                        }
+                    },
                     {
                         loader: "pug-html-loader",
                         options: {

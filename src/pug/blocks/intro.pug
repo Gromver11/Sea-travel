@@ -1,8 +1,12 @@
 div.intro__logo.logo
-    img(src="../images/logo.png" alt="logo" class="logo_img")
+    picture
+        source(srcset="../images/logo-d.png" media="(min-width:1200px)")
+        img(src="../images/logo.png" alt="logo" class="logo__img")
 h1.intro__title.main-title
     div.main-title__inner
         span.main-title__text.main-title__text--small Морские прогулки
         span.main-title__text.main-title__text--big  по чёрному морю
 a(href="#" class="btn intro__btn") Выбрать круиз
-img(src="../images/line.png" alt="Пунктирная линия" class="intro__img")
+picture
+    source(srcset="../images/line-d.png" media="(min-width: 1200px)")
+    img(src="../images/line.png" alt="Пунктирная линия" class="intro__img")

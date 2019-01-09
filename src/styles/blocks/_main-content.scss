@@ -17,5 +17,10 @@
       padding-top: 215px;
       height: 600px;
     }
+    @include above($lg) {
+      height: 644px;
+      padding-top: 173px;
+      background-image: url("../images/intro-bg-d.jpg");
+    }
   }
 }

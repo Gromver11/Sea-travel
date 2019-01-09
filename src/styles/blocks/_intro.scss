@@ -7,6 +7,9 @@
     @include above($md) {
       top: 142px;
     }
+    @include above($lg) {
+      top: 80px;
+    }
   }
   &__img {
     position: absolute;
@@ -16,9 +19,14 @@
     @include above($md) {
       left: 49%;
     }
+    @include above($lg) {
+      bottom: -104px;
+      left: 50%;
+    }
   }
   &__btn {
     background-color: $color-blue--light;
+    position: relative;
     display: block;
     width: 202px;
     color: $color-white;
@@ -40,6 +48,9 @@
     text-align: center;
     @include above($md) {
       margin-bottom: 29px;
+    }
+    @include above($lg) {
+      margin-bottom: 72px;
     }
   }
 }
