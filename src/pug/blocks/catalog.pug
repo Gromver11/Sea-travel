@@ -1,0 +1,88 @@
+include ../mixins/card-picture
+
+h2.catalog__title Каталог круизов
+p.catalog__sort Сортировать круизы по&nbsp;цене
+div.catalog__cards
+    section.card.catalog__card
+        +card-picture('../images/anapa.jpg','Анапа','../images/anapa-tab.jpg',
+        '../images/anapa-d.jpg')
+        p.card__tag.card__tag--blue Хит продаж
+        div.card__content
+            h2.card__title
+                a(class='card__link' href='#') Морская прогулка в&nbsp;Анапу
+            div.card__description.description
+                dl.description__row
+                    dt.description__text.description__text--bold Маршрут:
+                    dd.description__text Сочи-Лазаревское-Геленджик-Анапа
+                dl.description__row
+                    dt.description__text.description__text--bold  Продолжительность:
+                    dd.description__text 10&nbsp;ч.&nbsp;0&nbsp;мин
+            div.card__price
+                p.price__value 49&nbsp;000&nbsp;руб.
+    section.catalog__card.card
+        +card-picture('../images/sochi.jpg','Сочи','../images/sochi-tab.jpg',
+        '../images/sochi-d.jpg')
+        p.card__tag.card__tag--pink Акция
+        div.card__content
+            h2.card__title
+                a(class='card__link' href='#') Обзорная морская прогулка с&nbsp;экскурсией
+            div.card__description.description
+                dl.description__row
+                    dt.description__text.description__text--bold Маршрут:
+                    dd.description__cell.description__text Сочи-Адлер-Сочи (без&nbsp;высадки)
+                dl.description__row
+                    dt.description__text.description__text--bold Продолжительность:
+                    dd.description__text 1 ч. 0 мин
+            div.card__price.price
+                p.price__value 5 000 руб.
+                p.price__value.price__value--prev 15000 руб.
+    section.catalog__card.card
+        +card-picture('../images/Gel.jpg','Геленджик','../images/Gel-tab.jpg',
+        '../images/Gel-d.jpg')
+        p.tag.card__tag.card__tag--pink Скидка
+            span.tag__text 10&#37;
+        div.card__content
+            h2.card__title
+                a(class='card__link' href='#') Морская прогулка в&nbsp;Геленджик
+            div.card__description.description
+                dl.description__row
+                    dt.description__text.description__text--bold Маршрут:
+                    dd.description__text Cочи-Туапсе-Геленджик
+                dl.description__row
+                    dt.description__text.description__text--bold Продолжительность:
+                    dd.description__text 12 ч. 30 мин
+            div.card__price.price
+                p.price__value 7 000 руб.
+                p.price__value.price__value--prev 10000 руб.
+    section.catalog__card.card
+        +card-picture('../images/nov.jpg','Новороссиийск','../images/nov-tab.jpg',
+        '../images/nov-d.jpg')
+        div.card__content
+            h2.card__title
+                a(class='card__link' href='#') Морской круиз в Новороссийск
+            div.card__description.description
+                dl.description__row
+                    dt.description__text.description__text--bold Маршрут:
+                    dd.description__text Cочи-Геленджик-Новороссийск-Геленджик-&nbsp;Сочи
+                dl.description__row
+                    dt.description__text.description__text--bold Продолжительность:
+                    dd.description__text 13 ч. 0 мин
+            div.card__price.price
+                p.price__value 14 800 руб.
+    section.card.catalog__card.catalog__card--desktop
+        +card-picture('../images/abrau-d.jpg','Абрау-Дюрсо')
+        h2.card__title
+            a(class='card__link' href='#') Морская прогулка в Абрау-Дюрсо
+        div.card__description.description
+            dl.description__row
+                dt.description__text.description__text--bold Маршрут:
+                dd.description__text Cочи-Абрау-Дюрсо
+            dl.description__row
+                dt.description__text.description__text--bold Продолжительность:
+                dd.description__text 11 ч. 0 мин
+        div.card__price.price
+            p.price__value 14 800 руб.
+a(class="btn catalog__btn main-content__btn" href="#") Больше круизов
+
+
+

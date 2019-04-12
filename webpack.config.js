@@ -1,6 +1,5 @@
-const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: {
         main: './src/scripts/index.js'
@@ -11,7 +10,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: "babel-loader"
+                    loader: 'babel-loader'
                 }
             },
 
@@ -19,13 +18,13 @@ module.exports = {
                 test: /\.pug$/,
                 use: [
                     {
-                        loader: "html-loader",
+                        loader: 'html-loader',
                         options: {
                             attrs: ['img:src', 'source:srcset']
                         }
                     },
                     {
-                        loader: "pug-html-loader",
+                        loader: 'pug-html-loader',
                         options: {
                             pretty:true
                         }
@@ -71,13 +70,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/pug/index.pug",
-            filename: "./index.html"
+            template: './src/pug/index.pug',
+            filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
-            filename: "style.css",
+            filename: 'style.css',
         })
     ]
 }

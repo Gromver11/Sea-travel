@@ -1,0 +1,60 @@
+.catalog {
+  &__card--desktop {
+    display: none;
+  }
+  &__title {
+    font: {
+      family: $font-stack--base;
+      size: 20px;
+      weight: normal;
+    }
+    color: $color-blue;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font: {
+      family: $font--additional;
+      size: 14px;
+    }
+    line-height: 1.7;
+    color: $color-blue;
+    margin-bottom: 26px;
+  }
+  &__sort::after {
+    content: '';
+    background: url("../images/sort-arrow.png") no-repeat center;
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin-left: 10px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__card {
+    position: relative;
+    width: 290px;
+    margin-bottom:18px;
+  }
+  &__btn::after {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    content: '';
+    background: url("../images/catalog-arrow.png") no-repeat center;
+    position: relative;
+    left: 10px;
+  }
+  &__card:nth-child(4){
+    margin-bottom: 0;
+  }
+}

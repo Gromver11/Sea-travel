@@ -10,7 +10,7 @@
     background-color:$color-blue;
   }
   &__line::after, &__line::before {
-    content: "";
+    content: '';
     width: 22px;
     height: 2px;
     background-color: $color-blue;

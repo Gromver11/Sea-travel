@@ -1,0 +1,60 @@
+.card {
+  &__link {
+    text-decoration: none;
+    color: $color-blue--light;
+  }
+  &__title {
+    font: {
+      weight: normal;
+      size: 18px;
+      family: $font-stack--base;
+    }
+    margin-bottom:  20px;
+    line-height: 1.1;
+  }
+  &__tag {
+    font: {
+      size: 14px;
+      family: $font--additional;
+    }
+    line-height: 1.3;
+    width: 88px;
+    padding: 42px 0;
+    text-align: center;
+    color: $color-white;
+    text-transform: uppercase;
+    background: no-repeat center;
+    position: absolute;
+    right: 26px;
+    top:-17px;
+  }
+  &__tag--pink {
+    background-image: url('../images/tag-pink.png');
+  }
+  &__tag--blue {
+    background-image: url('../images/tag-blue.png');
+  }
+  &__img {
+    display: block;
+    height: 228px;
+  }
+  &__content {
+    padding: 25px 24px 10px 24px;
+    background: $color-white;
+    box-sizing: border-box;
+    height: 241px;
+  }
+  &__description {
+    margin-bottom: 20px;
+  }
+  &__title::after {
+   display: inline-block;
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: url("../images/arrow-title.png") no-repeat center;
+    position: relative;
+    left: 5px;
+
+  }
+}

@@ -1,0 +1,17 @@
+.price {
+  &__value {
+    font: {
+      family: $font-stack--base;
+      size: 30px;
+    }
+    color:$color-blue;
+    line-height: 1.6;
+    display: inline;
+  }
+  &__value--prev {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: $color--price;
+    line-height: 2.6;
+  }
+}

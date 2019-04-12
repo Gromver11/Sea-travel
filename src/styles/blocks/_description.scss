@@ -1,0 +1,14 @@
+.description {
+  &__text {
+    font: {
+      family: $font--additional;
+      size: 14px;
+    }
+    line-height: 1.5;
+    color: $color-blue;
+    display: inline;
+}
+  &__text--bold {
+    font-weight: bold;
+ }
+}

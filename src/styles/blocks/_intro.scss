@@ -25,20 +25,7 @@
     }
   }
   &__btn {
-    background-color: $color-blue--light;
     position: relative;
-    display: block;
-    width: 202px;
-    color: $color-white;
-    font: {
-      family: $font--additional;
-      size: 14px;
-    }
-    line-height: 3.4;
-    text-decoration: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
   &__title {
     margin-bottom: 34px;
