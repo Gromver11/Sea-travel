@@ -1,0 +1,10 @@
+.copyright {
+  &__text {
+    font: {
+      family: $font--additional;
+      size: 14px;
+    }
+    color: $color-blue;
+    line-height: 1.7;
+  }
+}
