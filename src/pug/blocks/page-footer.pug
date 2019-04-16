@@ -1,4 +1,9 @@
+include ../mixins/menu-item
 div.page-footer__inner
+    ul.page-footer__menu.menu
+        +menu-item("Вход для партнеров")
+        +menu-item("О компании")
+        +menu-item("Контакты")
     h3.page-footer__caption Будь на связи:
     div.page-footer__social.social
         a(class="btn social__btn social__btn--vk" href="#") Вконтакте
