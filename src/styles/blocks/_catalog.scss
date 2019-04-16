@@ -48,7 +48,6 @@
   }
   &__card {
     position: relative;
-    width: 290px;
     margin-bottom:18px;
     @include above($md) {
       width: 345px;

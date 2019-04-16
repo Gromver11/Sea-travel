@@ -37,7 +37,9 @@
   &__img {
     display: block;
     height: 228px;
-    width: 100%;
+    @include above($md) {
+      height: auto;
+    }
   }
   &__content {
     padding: 25px 24px 10px 24px;

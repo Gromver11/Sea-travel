@@ -21,4 +21,25 @@
   &__btn--inst {
     background-image: url("../images/insta.svg");
   }
+  &__caption {
+    font: {
+      family: $font--additional;
+      size: 14px;
+      weight: normal;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: $color-blue;
+    margin-bottom: 10px;
+    @include above($md) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-between;
+  }
 }

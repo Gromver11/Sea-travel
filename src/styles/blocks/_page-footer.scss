@@ -1,37 +1,48 @@
 .page-footer {
-  height: 200px;
-  padding-top: 28px;
-  padding-bottom: 40px;
-  padding-left: 23px;
-  padding-right: 23px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @include above($md) {
+    height: auto;
+  }
   &__social {
     display: flex;
-    width: 150px;
+    flex-direction: column;
     margin-bottom: 20px;
     justify-content: space-between;
+    @include above($md) {
+      margin-bottom: 0;
+    }
   }
   &__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  &__caption {
-    font: {
-      family: $font--additional;
-      size: 14px;
-      weight: normal;
+    @include above($md) {
+      flex-direction: row;
+      justify-content: space-between;
     }
-    line-height: 1.7;
-    color: $color-blue;
-    margin-bottom: 10px;
   }
   &__contacts {
     margin-bottom: 15px;
   }
   &__menu {
     display: none;
+    @include above($md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      list-style: none;
+      font: {
+        family: $font--additional;
+        size: 14px;
+      }
+      line-height: 1.55;
+      color: $color-blue;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
