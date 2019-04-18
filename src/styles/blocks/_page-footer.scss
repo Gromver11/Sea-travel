@@ -2,7 +2,6 @@
   padding-top: 24px;
   padding-bottom: 24px;
   @include above($md) {
-    height: auto;
   }
   &__social {
     display: flex;

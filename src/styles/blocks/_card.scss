@@ -46,6 +46,11 @@
     background: $color-white;
     box-sizing: border-box;
     height: 241px;
+    @include above($md) {
+      height: 235px;
+      padding-left: 33px;
+      padding-right: 65px;
+    }
   }
   &__description {
     margin-bottom: 20px;

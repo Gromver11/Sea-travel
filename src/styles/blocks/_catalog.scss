@@ -1,6 +1,9 @@
 .catalog {
   &__card--desktop {
     display: none;
+    @include above($lg) {
+      display: block;
+    }
   }
   &__title {
     font: {
@@ -41,16 +44,22 @@
     margin-bottom: 20px;
     @include above($md) {
       flex-direction: row;
-      align-content: space-between;
+      align-items: initial;
       flex-wrap: wrap;
-      width:735px;
+      width: 735px;
+    }
+    @include above($lg) {
+      width: 1140px;
     }
   }
   &__card {
     position: relative;
-    margin-bottom:18px;
+    margin-bottom: 18px;
     @include above($md) {
       width: 345px;
+    }
+    @include above($lg) {
+      width: 555px;
     }
   }
   &__btn::after {
@@ -62,7 +71,7 @@
     position: relative;
     left: 10px;
   }
-  &__card:nth-child(4){
+  &__card:nth-child(4) {
     margin-bottom: 0;
   }
 }
