@@ -51,6 +51,9 @@
       padding-left: 33px;
       padding-right: 65px;
     }
+    @include above($lg) {
+      height: 190px;
+    }
   }
   &__description {
     margin-bottom: 20px;
