@@ -6,7 +6,7 @@
   &__social {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     justify-content: space-between;
     @include above($md) {
       margin-bottom: 0;

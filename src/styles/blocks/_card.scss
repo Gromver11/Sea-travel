@@ -9,8 +9,9 @@
       size: 18px;
       family: $font-stack--base;
     }
-    margin-bottom:  20px;
+    margin-bottom: 14px;
     line-height: 1.1;
+    width: 220px;
   }
   &__tag {
     font: {
@@ -26,7 +27,7 @@
     background: no-repeat center;
     position: absolute;
     right: 26px;
-    top:-17px;
+    top: -17px;
   }
   &__tag--pink {
     background-image: url('../images/tag-pink.png');
@@ -42,10 +43,10 @@
     }
   }
   &__content {
-    padding: 25px 24px 10px 24px;
+    padding: 25px 16px 10px 21px;
     background: $color-white;
     box-sizing: border-box;
-    height: 241px;
+    height: 240px;
     @include above($md) {
       height: 235px;
       padding-left: 33px;
@@ -56,16 +57,23 @@
     }
   }
   &__description {
-    margin-bottom: 20px;
+    margin-bottom: 11px;
   }
   &__title::after {
-   display: inline-block;
+    display: inline-block;
     content: '';
     width: 9px;
     height: 9px;
     background: url("../images/arrow-title.png") no-repeat center;
     position: relative;
     left: 5px;
-
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__description--different-margin {
+    margin-bottom: 36px;
   }
 }
