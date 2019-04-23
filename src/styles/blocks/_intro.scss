@@ -28,13 +28,13 @@
     position: relative;
   }
   &__title {
-    margin-bottom: 34px;
+    margin-bottom: 37px;
     font-family: $font-stack--base;
     color: $color-blue;
     font-weight: normal;
     text-align: center;
     @include above($md) {
-      margin-bottom: 29px;
+      margin-bottom: 25px;
     }
     @include above($lg) {
       margin-bottom: 72px;

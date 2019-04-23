@@ -7,8 +7,12 @@
     line-height: 1.5;
     color: $color-blue;
     display: inline;
+    margin-right: 8px;
 }
   &__text--bold {
     font-weight: bold;
  }
+  &__text:last-child  {
+    margin-right:0;
+  }
 }

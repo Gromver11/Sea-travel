@@ -2,6 +2,8 @@
   padding-top: 24px;
   padding-bottom: 24px;
   @include above($md) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   &__social {
     display: flex;
@@ -10,6 +12,7 @@
     justify-content: space-between;
     @include above($md) {
       margin-bottom: 0;
+      margin-right: 108px;
     }
   }
   &__inner {
@@ -18,11 +21,12 @@
     align-items: center;
     @include above($md) {
       flex-direction: row;
-      justify-content: space-between;
+      margin: 0 auto;
+      width: 720px;
     }
   }
   &__contacts {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
   &__menu {
     display: none;
@@ -36,12 +40,15 @@
         size: 14px;
       }
       line-height: 1.55;
-      color: $color-blue;
+      margin-right:84px;
     }
   }
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include above($md) {
+      align-items: flex-start;
+    }
   }
 }

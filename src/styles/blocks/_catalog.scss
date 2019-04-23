@@ -3,6 +3,7 @@
     display: none;
     @include above($lg) {
       display: block;
+      order: 5;
     }
   }
   &__title {
@@ -14,6 +15,11 @@
     color: $color-blue;
     text-align: center;
     margin-bottom: 5px;
+    @include above($md) {
+      font-size: 26px;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
   }
   &__sort {
     display: flex;
@@ -27,6 +33,9 @@
     line-height: 1.7;
     color: $color-blue;
     margin-bottom: 26px;
+    @include above($md) {
+      margin-bottom: 30px;
+    }
   }
   &__sort::after {
     content: '';
@@ -44,9 +53,11 @@
     margin-bottom: 18px;
     @include above($md) {
       flex-direction: row;
-      align-items: initial;
       flex-wrap: wrap;
-      width: 735px;
+      align-items: stretch;
+      justify-content: space-around;
+      margin-bottom: 25px;
+
     }
     @include above($lg) {
       width: auto;
@@ -59,6 +70,7 @@
     margin-bottom: 17px;
     @include above($md) {
       width: 345px;
+      margin-bottom: 26px;
     }
     @include above($lg) {
       width: 555px;
@@ -74,30 +86,23 @@
     position: relative;
     left: 16px;
   }
-  &__card:nth-child(1) {
-    @include above($lg) {
-      order: 1;
-    }
-  }
-  &__card:nth-child(2) {
+  &__card--desktop-col{
     @include above($lg) {
       order: 3;
     }
   }
-  &__card:nth-child(3) {
-    @include above($lg) {
-      order: 4;
-    }
-  }
-  &__card:nth-child(4) {
+  &__card--last-of-the-mobile {
     margin-bottom: 0;
     @include above($lg) {
       order: 2;
     }
   }
-  &__card:nth-child(5) {
+  &__card--tablet-col {
+    @include above($md) {
+      margin-bottom: 0;
+    }
     @include above($lg) {
-      order: 5;
+      order:4;
     }
   }
 }

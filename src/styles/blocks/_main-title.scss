@@ -5,11 +5,11 @@
   &__text--small {
     font-size: 20px;
     line-height: 2.4;
-    margin-bottom: 3px;
+    //margin-bottom: 3px;
     @include above($md) {
       font-size: 26px;
       line-height: 1.8;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
     @include above($lg) {
       font-size: 36px;
@@ -22,8 +22,8 @@
     line-height: 1;
     text-transform: uppercase;
     @include above($md) {
-      font-size: 72px;
-      line-height: 0.7;
+      font-size: 68px;
+      line-height: 0.77;
     }
     @include above($lg) {
       font-size: 100px;
@@ -31,10 +31,10 @@
     }
    }
   &__inner {
-    width: 244px;
+    width: 254px;
     margin: 0 auto;
     @include above($md) {
-      width: 742px;
+      width: auto;
     }
     @include above($lg) {
       width: 1031px;

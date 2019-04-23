@@ -19,10 +19,10 @@ div.catalog__cards
                     dd.description__text 10&nbsp;ч.&nbsp;0&nbsp;мин
             div.card__price
                 p.price__value 49&nbsp;000&nbsp;руб.
-    section.catalog__card.card
+    section.card.catalog__card.catalog__card--desktop-col
         +card-picture('../images/sochi.jpg','Сочи','../images/sochi-tab.jpg',
         '../images/sochi-d.jpg')
-        p.card__tag.card__tag--pink Акция
+        p.card__tag.card__tag--pink.card__tag--position Акция
         div.card__content
             h2.card__title
                 a(class='card__link' href='#') Обзорная морская прогулка с&nbsp;экскурсией
@@ -36,7 +36,7 @@ div.catalog__cards
             div.card__price.price
                 p.price__value 5 000 руб.
                 p.price__value.price__value--prev 15000 руб.
-    section.catalog__card.card
+    section.card.catalog__card.catalog__card--tablet-col
         +card-picture('../images/Gel.jpg','Геленджик','../images/Gel-tab.jpg',
         '../images/Gel-d.jpg')
         p.tag.card__tag.card__tag--pink Скидка
@@ -54,7 +54,7 @@ div.catalog__cards
             div.card__price.price
                 p.price__value 7 000 руб.
                 p.price__value.price__value--prev 10000 руб.
-    section.catalog__card.card
+    section.card.catalog__card.catalog__card--last-of-the-mobile
         +card-picture('../images/nov.jpg','Новороссиийск','../images/nov-tab.jpg',
         '../images/nov-d.jpg')
         div.card__content
