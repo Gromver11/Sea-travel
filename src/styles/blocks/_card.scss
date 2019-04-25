@@ -34,6 +34,9 @@
     @include above($md) {
       right: 35px;
     }
+    @include above($lg) {
+      right: 47px;
+    }
   }
   &__tag--pink {
     background-image: url('../images/tag-pink.png');
@@ -85,7 +88,7 @@
   &__description--different-margin {
     margin-bottom: 36px;
     @include above($lg) {
-      margin-bottom: 0;
+      margin-bottom: 13px;
     }
   }
   &__tag--position {
@@ -93,6 +96,9 @@
    @include above($md) {
      right: 35px;
    }
+    @include above($lg) {
+      right: 48px;
+    }
   }
   &__title--different-width {
     @include above($md) {
