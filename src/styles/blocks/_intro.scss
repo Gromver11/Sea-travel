@@ -21,7 +21,6 @@
     }
     @include above($lg) {
       bottom: -104px;
-      left: 50%;
     }
   }
   &__btn {
@@ -37,7 +36,7 @@
       margin-bottom: 25px;
     }
     @include above($lg) {
-      margin-bottom: 72px;
+      margin-bottom: 78px;
     }
   }
 }

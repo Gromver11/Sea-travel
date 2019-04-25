@@ -44,5 +44,8 @@
       padding-top: 50px;
       padding-bottom: 55px;
     }
+    @include above($lg) {
+      padding-top: 108px;
+    }
   }
 }

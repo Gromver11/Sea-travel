@@ -12,6 +12,9 @@
     margin-bottom: 14px;
     line-height: 1.1;
     width: 220px;
+    @include above($lg) {
+      width: auto;
+    }
   }
   &__tag {
     font: {
@@ -75,14 +78,28 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @include above($lg) {
+      width: 270px;
+    }
   }
   &__description--different-margin {
     margin-bottom: 36px;
+    @include above($lg) {
+      margin-bottom: 0;
+    }
   }
   &__tag--position {
     top: -9px;
    @include above($md) {
      right: 35px;
    }
+  }
+  &__title--different-width {
+    @include above($md) {
+      width: 260px;
+    }
+    @include above($lg) {
+      width: auto;
+    }
   }
 }

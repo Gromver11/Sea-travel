@@ -20,6 +20,10 @@
       line-height: 1.7;
       margin-bottom: 0;
     }
+    @include above($lg) {
+      font-size:36px;
+      line-height: 1.3;
+    }
   }
   &__sort {
     display: flex;
@@ -35,6 +39,9 @@
     margin-bottom: 26px;
     @include above($md) {
       margin-bottom: 30px;
+    }
+    @include above($lg) {
+      margin-bottom: 44px;
     }
   }
   &__sort::after {
@@ -60,8 +67,10 @@
 
     }
     @include above($lg) {
-      width: auto;
       height: 1055px;
+      align-content: center;
+      width: auto;
+      justify-content: space-between;
       flex-direction: column;
     }
   }
@@ -103,6 +112,11 @@
     }
     @include above($lg) {
       order:4;
+    }
+  }
+  &__card--big {
+    @include above($lg) {
+      margin-right: 30px;
     }
   }
 }
