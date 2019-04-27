@@ -8,19 +8,25 @@
     line-height: 1.3;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 415px;
     position: absolute;
-    padding-left: 44px;
-    padding-right: 127px;
-    padding-bottom: 67px;
-    padding-top: 55px;
+    padding: 55px 30px 67px;
     box-sizing: border-box;
-    width: 420px;
+    width: 260px;
     background-color: $color-blue;
-    top: 50px;
-    left: -999px;
-  }
-  &__item {
-    margin-bottom: 30px;
+    top: 46px;
+    left: -700px;
+    transition: left .8s;
+    @include above($md) {
+      top: 40px;
+    }
+    @include above($lg) {
+      width: 420px;
+      padding-left: 44px;
+      padding-right: 127px;
+
+    }
   }
   &__item:last-child {
     margin-bottom: 0;
