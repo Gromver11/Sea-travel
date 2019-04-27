@@ -3,11 +3,9 @@
     width: 30px;
     height: 32px;
     display: block;
-    background: $color-blue;
     font-size: 0;
     border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position:center ;
+    background: $color-blue no-repeat center;
   }
   &__btn--vk {
     background-image: url("../images/vk.svg");
@@ -41,5 +39,8 @@
     flex-direction: row;
     width: 150px;
     justify-content: space-between;
+  }
+  &__btn:hover {
+    background-color: $color--btn-hover;
   }
 }
