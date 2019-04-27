@@ -5,7 +5,6 @@
   &__text--small {
     font-size: 20px;
     line-height: 2.4;
-    //margin-bottom: 3px;
     @include above($md) {
       font-size: 26px;
       line-height: 1.8;
@@ -30,14 +29,4 @@
       line-height: 0.5;
     }
    }
-  &__inner {
-    width: 254px;
-    margin: 0 auto;
-    @include above($md) {
-      width: auto;
-    }
-    @include above($lg) {
-      width: 1031px;
-    }
-  }
 }
