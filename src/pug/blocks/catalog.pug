@@ -1,11 +1,11 @@
-include ../mixins/card-picture
-
 h2.catalog__title Каталог круизов
 p.catalog__sort Сортировать круизы по&nbsp;цене
 div.catalog__cards
     section.card.catalog__card.catalog__card--big
-        +card-picture('../images/anapa.jpg','Анапа','../images/anapa-tab.jpg',
-        '../images/anapa-d.jpg')
+        div.card__pictures
+            img(class="card__img card__img--mobile" src="../images/anapa.jpg" alt ='Анапа')
+            img(class='card__img card__img--tab' src="../images/anapa-tab.jpg" alt='Анапа')
+            img(class='card__img card__img--dsk' src="../images/anapa-d.jpg" alt='Анапа')
         p.card__tag.card__tag--blue Хит продаж
         div.card__content
             h2.card__title
@@ -20,8 +20,10 @@ div.catalog__cards
             div.card__price
                 p.price__value 49&nbsp;000&nbsp;руб.
     section.card.catalog__card.catalog__card--desktop-col
-        +card-picture('../images/sochi.jpg','Сочи','../images/sochi-tab.jpg',
-        '../images/sochi-d.jpg')
+        div.card__pictures
+            img(class="card__img card__img--mobile" src="../images/sochi.jpg" alt ='Сочи')
+            img(class='card__img card__img--tab' src="../images/sochi-tab.jpg" alt='Сочи')
+            img(class='card__img card__img--dsk' src="../images/sochi-d.jpg" alt='Сочи')
         p.card__tag.card__tag--pink.card__tag--position Акция
         div.card__content
             h2.card__title.card__title--different-width
@@ -37,8 +39,10 @@ div.catalog__cards
                 p.price__value 5 000 руб.
                 p.price__value.price__value--prev 15000 руб.
     section.card.catalog__card.catalog__card--tablet-col
-        +card-picture('../images/Gel.jpg','Геленджик','../images/Gel-tab.jpg',
-        '../images/Gel-d.jpg')
+        div.card__pictures
+            img(class="card__img card__img--mobile" src="../images/Gel.jpg" alt ='Геленджик')
+            img(class='card__img card__img--tab' src="../images/Gel-tab.jpg" alt='Геленджик')
+            img(class='card__img card__img--dsk' src="../images/Gel-d.jpg" alt='Геленджик')
         p.tag.card__tag.card__tag--pink Скидка
             span.tag__text 10&#37;
         div.card__content
@@ -55,8 +59,10 @@ div.catalog__cards
                 p.price__value 7 000 руб.
                 p.price__value.price__value--prev 10000 руб.
     section.card.catalog__card.catalog__card--last-of-the-mobile
-        +card-picture('../images/nov.jpg','Новороссиийск','../images/nov-tab.jpg',
-        '../images/nov-d.jpg')
+        div.card__pictures
+            img(class="card__img card__img--mobile" src="../images/nov.jpg" alt ='Новороссийск')
+            img(class='card__img card__img--tab' src="../images/nov-tab.jpg" alt='Новороссийск')
+            img(class='card__img card__img--dsk' src="../images/nov-d.jpg" alt='Новороссийск')
         div.card__content
             h2.card__title
                 a(class='card__link' href='#') Морской круиз в&nbsp;Новороссийск
@@ -70,8 +76,9 @@ div.catalog__cards
             div.card__price.price
                 p.price__value 14 800 руб.
     section.card.catalog__card.catalog__card--desktop
-        +card-picture('../images/abrau-d.jpg','Абрау-Дюрсо')
-        div.card__content.card__content--height
+        div.card__pictures
+            img(class='card__img card__img--dsk' src="../images/abrau-d.jpg" alt='Абрау-Дюрсо')
+        div.card__content
             h2.card__title
                 a(class='card__link' href='#') Морская прогулка в Абрау-Дюрсо
             div.card__description.description

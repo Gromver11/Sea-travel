@@ -77,6 +77,7 @@
   &__card {
     position: relative;
     margin-bottom: 17px;
+    width: 290px; // For IE;
     @include above($md) {
       width: 345px;
       margin-bottom: 26px;

@@ -108,4 +108,24 @@
       width: auto;
     }
   }
+  &__img--mobile {
+    @include above($md) {
+      display:none;
+    }
+  }
+  &__img--tab {
+    display: none;
+    @include above($md) {
+      display: block;
+    }
+    @include above($lg) {
+      display: none;
+    }
+  }
+  &__img--dsk {
+    display: none;
+    @include above ($lg) {
+      display: block;
+    }
+  }
 }
