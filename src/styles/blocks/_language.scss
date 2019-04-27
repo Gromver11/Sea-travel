@@ -20,9 +20,7 @@
     display: block;
     width: 7px;
     height: 5px;
-    background-image: url("../images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../images/arrow.png") no-repeat center;
     margin-right: 15px;
   }
 }

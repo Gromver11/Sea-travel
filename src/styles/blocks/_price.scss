@@ -13,4 +13,7 @@
     color: $color--price;
     line-height: 2.6;
   }
+  &__value--current:hover {
+    color: green;
+  }
 }

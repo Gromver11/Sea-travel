@@ -48,4 +48,10 @@
       padding-top: 108px;
     }
   }
+  &__btn:hover {
+    background-color: $color--btn-hover;
+  }
+  &__btn:active {
+    background: $color--btn-active;
+  }
 }
