@@ -14,23 +14,39 @@
   &__content {
     position: absolute;
     display: none;
+    flex-direction: column;
+    background: $color-blue;
+    width: 80px;
+    align-items: center;
+    top: 32px;
+
   }
   &__btn::before {
     content: "";
     display: block;
     width: 11px;
     height: 13px;
-    background-image: url("../images/currency.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../images/currency.png") no-repeat center;
   }
   &__btn::after {
     content: "";
     display: block;
     width: 7px;
     height: 5px;
-    background-image: url("../images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../images/arrow.png") no-repeat center;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  &__link:hover {
+    background-color: white;
+    color: $color-black;
+  }
+  &__content--opened {
+    display: flex;
   }
 }
