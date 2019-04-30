@@ -1,2 +1,2 @@
 import '../styles/index.scss';
-import './js-togglr.min.js';
+import './switcher.min.js';
