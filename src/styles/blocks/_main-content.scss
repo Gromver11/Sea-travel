@@ -1,12 +1,12 @@
 .main-content {
   &__intro {
-    background-size: cover;
     background: $color--bg-intro url("../images/intro-bg-mobile.jpg") no-repeat bottom;
     position: relative;
     height: 583px;
     padding-top: 92px;
     padding-bottom: 206px;
     box-sizing: border-box;
+    background-size: cover;
     @include above($mland) {
       background-image: url("../images/intro-bg-tab.jpg");
     }
