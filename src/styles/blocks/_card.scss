@@ -31,6 +31,7 @@
     position: absolute;
     right: 26px;
     top: -17px;
+    cursor:pointer;
     @include above($md) {
       right: 35px;
     }
