@@ -16,8 +16,8 @@
     width: 260px;
     background-color: $color-blue;
     top: 46px;
-    left: -700px;
-    transition: left .8s;
+    left: -9999px;
+    transition: left .6s;
     @include above($md) {
       top: 40px;
     }
